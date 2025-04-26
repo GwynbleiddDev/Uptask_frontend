@@ -54,7 +54,7 @@ export async function getProjectTeam( projectId : Project['_id'] ) {
 
 export async function removeUserFromProject( 
   { projectId, userId } : 
-  { projectId: Project['_id'], userId: TeamMember } 
+  { projectId: Project['_id'], userId: TeamMember['_id'] } 
 ) {
   try {
     const url = `/projects/${projectId}/team/${userId}`

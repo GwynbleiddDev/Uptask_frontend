@@ -111,7 +111,7 @@ export default function ProjectTeamView() {
                         <button
                           type="button"
                           className="block px-3 py-1 text-sm leading-6 text-red-500"
-                          onClick={() => mutate({ projectId, userId: member })}
+                          onClick={() => mutate({ projectId, userId: member._id })}
                         >
                           Eliminar del Proyecto
                         </button>
